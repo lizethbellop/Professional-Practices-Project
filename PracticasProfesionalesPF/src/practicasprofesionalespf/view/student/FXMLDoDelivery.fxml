@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="practicasprofesionalespf.controller.student.FXMLDoDeliveryController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="110.0" layoutX="34.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/uv_logo.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="702.0" layoutY="-2.0" prefHeight="77.0" prefWidth="322.0" style="-fx-background-color: #015aaa;">
+         <children>
+            <Label layoutX="37.0" layoutY="21.0" text="Universidad Veracruzana" textFill="WHITE">
+               <font>
+                  <Font name="Avenir Medium" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="232.0" layoutY="82.0" text="Entrega" textFill="#015aaa">
+         <font>
+            <Font name="Avenir Medium" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbDeliveryName" layoutX="233.0" layoutY="147.0">
+         <font>
+            <Font name="Avenir Medium" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="74.0" layoutY="211.0" text="Inicio">
+         <font>
+            <Font name="Avenir Medium" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="426.0" layoutY="216.0" text="Fin">
+         <font>
+            <Font name="Avenir Medium" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbStartDate" layoutX="77.0" layoutY="253.0">
+         <font>
+            <Font name="Avenir Medium" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbEndDate" layoutX="424.0" layoutY="251.0">
+         <font>
+            <Font name="Avenir Medium" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="62.0" layoutY="324.0" text="Comentarios" textFill="#015aaa">
+         <font>
+            <Font name="Avenir Medium" size="18.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="taComments" layoutX="58.0" layoutY="350.0" prefHeight="180.0" prefWidth="933.0" />
+      <Button layoutX="62.0" layoutY="573.0" mnemonicParsing="false" onAction="#onUploadButtonClicked" style="-fx-background-color: #01ab4b;" text="Subir archivo" textFill="WHITE">
+         <font>
+            <Font name="Avenir Medium" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="887.0" layoutY="672.0" mnemonicParsing="false" onAction="#onDeliverButtonClicked" style="-fx-background-color: #01ab4b;" text="Entregar" textFill="WHITE">
+         <font>
+            <Font name="Avenir Medium" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="769.0" layoutY="671.0" mnemonicParsing="false" onAction="#onCancelButtonClicked" style="-fx-background-color: #01ab4b;" text="Cancelar" textFill="WHITE">
+         <font>
+            <Font name="Avenir Medium" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="lbFileName" layoutX="240.0" layoutY="579.0" textFill="#015aaa">
+         <font>
+            <Font name="Avenir Medium" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

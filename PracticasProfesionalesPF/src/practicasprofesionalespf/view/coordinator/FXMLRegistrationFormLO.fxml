@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="practicasprofesionalespf.controller.coordinator.FXMLRegistrationFormLOController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="102.0" layoutX="34.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/uv_logo.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="730.0" prefHeight="56.0" prefWidth="294.0" style="-fx-background-color: #015aaa;">
+         <children>
+            <Label layoutX="12.0" layoutY="10.0" text="Universidad Veracruzana" textFill="WHITE">
+               <font>
+                  <Font name="Avenir Medium" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="185.0" layoutY="118.0" text="Registrar Organización Vinculada">
+         <font>
+            <Font name="Avenir Medium" size="36.0" />
+         </font>
+      </Label>
+      
+      <Label layoutX="185.0" layoutY="200.0" text="Nombre de la organización:" textFill="#015aaa">
+         <font><Font name="Avenir Medium" size="18.0" /></font>
+      </Label>
+      <TextField fx:id="tfName" layoutX="185.0" layoutY="230.0" prefHeight="35.0" prefWidth="320.0" promptText="Ej: Innovatech Solutions" />
+      
+      <Label layoutX="185.0" layoutY="290.0" text="Calle:" textFill="#015aaa">
+         <font><Font name="Avenir Medium" size="18.0" /></font>
+      </Label>
+      <TextField fx:id="tfStreet" layoutX="185.0" layoutY="320.0" prefHeight="35.0" prefWidth="320.0" promptText="Ej: Av. Principal 123" />
+      
+      <Label layoutX="185.0" layoutY="380.0" text="Colonia:" textFill="#015aaa">
+         <font><Font name="Avenir Medium" size="18.0" /></font>
+      </Label>
+      <TextField fx:id="tfNeighborhood" layoutX="185.0" layoutY="410.0" prefHeight="35.0" prefWidth="320.0" promptText="Ej: Col. Centro" />
+      
+      <Label layoutX="185.0" layoutY="470.0" text="Ciudad:" textFill="#015aaa">
+         <font><Font name="Avenir Medium" size="18.0" /></font>
+      </Label>
+      <TextField fx:id="tfCity" layoutX="185.0" layoutY="500.0" prefHeight="35.0" prefWidth="320.0" promptText="Ej: Xalapa" />
+
+      <Label layoutX="525.0" layoutY="200.0" text="Estado:" textFill="#015aaa">
+         <font><Font name="Avenir Medium" size="18.0" /></font>
+      </Label>
+      <TextField fx:id="tfState" layoutX="525.0" layoutY="230.0" prefHeight="35.0" prefWidth="320.0" promptText="Ej: Veracruz" />
+      
+      <Label layoutX="525.0" layoutY="290.0" text="Código Postal:" textFill="#015aaa">
+         <font><Font name="Avenir Medium" size="18.0" /></font>
+      </Label>
+      <TextField fx:id="tfPostalCode" layoutX="525.0" layoutY="320.0" prefHeight="35.0" prefWidth="320.0" promptText="Ej: 91000" />
+      
+      <Label layoutX="525.0" layoutY="380.0" text="Teléfono:" textFill="#015aaa">
+         <font><Font name="Avenir Medium" size="18.0" /></font>
+      </Label>
+      <TextField fx:id="tfPhone" layoutX="525.0" layoutY="410.0" prefHeight="35.0" prefWidth="320.0" promptText="Ej: 2281234567" />
+      
+      <CheckBox fx:id="cbStatus" layoutX="525.0" layoutY="505.0" mnemonicParsing="false" selected="true" text="Estatus Activo">
+         <font><Font name="Avenir Medium" size="18.0" /></font>
+      </CheckBox>
+
+      <Button layoutX="800.0" layoutY="680.0" mnemonicParsing="false" onAction="#btnContinueClicked" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #01ab4b;" text="Registrar" textFill="WHITE">
+         <font>
+            <Font name="Avenir Medium" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="670.0" layoutY="680.0" mnemonicParsing="false" onAction="#btnExitClicked" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #01ab4b;" text="Cancelar" textFill="WHITE">
+         <font>
+            <Font name="Avenir Medium" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

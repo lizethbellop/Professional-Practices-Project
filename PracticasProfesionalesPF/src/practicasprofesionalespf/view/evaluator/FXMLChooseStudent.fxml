@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="practicasprofesionalespf.controller.evaluator.FXMLChooseStudentController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="131.0" layoutX="61.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/uv_logo.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="714.0" layoutY="-1.0" prefHeight="70.0" prefWidth="310.0" style="-fx-background-color: #015aaa;">
+         <children>
+            <Label layoutX="20.0" layoutY="16.0" text="Universidad Veracruzana" textFill="WHITE">
+               <font>
+                  <Font name="Avenir Medium" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="242.0" layoutY="137.0" text="Elige un estudiante">
+         <font>
+            <Font name="Avenir Medium" size="36.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tvStudents" layoutX="162.0" layoutY="227.0" prefHeight="411.0" prefWidth="756.0">
+        <columns>
+          <TableColumn fx:id="tcStudentEnrollmentId" prefWidth="163.50253295898438" text="Matricula" />
+          <TableColumn fx:id="tcStudentName" prefWidth="208.48739624023438" text="Nombre" />
+            <TableColumn fx:id="tcLastNameFather" prefWidth="199.51260375976562" text="Apellido Paterno" />
+            <TableColumn fx:id="tcLastNameMother" prefWidth="183.634033203125" text="Apellido Materno" />
+        </columns>
+      </TableView>
+      <Button layoutX="871.0" layoutY="694.0" mnemonicParsing="false" onAction="#onContinueButtonClicked" prefHeight="39.0" prefWidth="116.0" style="-fx-background-color: #01ab4b;" text="Continuar" textFill="WHITE">
+         <font>
+            <Font name="Avenir Medium" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="714.0" layoutY="694.0" mnemonicParsing="false" onAction="#onCancelButtonClicked" prefHeight="39.0" prefWidth="116.0" style="-fx-background-color: #01ab4b;" text="Cancelar" textFill="WHITE">
+         <font>
+            <Font name="Avenir Medium" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

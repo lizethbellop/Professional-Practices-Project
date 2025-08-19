@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="practicasprofesionalespf.controller.teacher.FXMLValidateDocumentController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="135.0" layoutX="28.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/uv_logo.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="806.0" layoutY="-1.0" prefHeight="69.0" prefWidth="373.0" style="-fx-background-color: #015aaa;">
+         <children>
+            <Label layoutX="64.0" layoutY="14.0" text="Universidad Veracruzana" textFill="WHITE">
+               <font>
+                  <Font name="Avenir Medium" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="255.0" layoutY="117.0" text="Validar documento">
+         <font>
+            <Font name="Avenir Medium" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbDocumentName" layoutX="240.0" layoutY="188.0" textFill="#015aaa">
+         <font>
+            <Font name="Avenir Medium" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbDocumentDate" layoutX="669.0" layoutY="187.0" textFill="#015aaa">
+         <font>
+            <Font name="Avenir Medium" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbProjectName" layoutX="71.0" layoutY="271.0" prefHeight="52.0" prefWidth="1019.0" textAlignment="RIGHT">
+         <font>
+            <Font name="Avenir Medium" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="797.0" layoutY="363.0" text="Calificación">
+         <font>
+            <Font name="Avenir Medium" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfGrade" layoutX="806.0" layoutY="419.0" prefHeight="42.0" prefWidth="176.0" promptText="1-10, se aceptan decimales" />
+      <Label layoutX="61.0" layoutY="365.0" text="Observaciones">
+         <font>
+            <Font name="Avenir Medium" size="24.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="taComments" layoutX="70.0" layoutY="413.0" prefHeight="131.0" prefWidth="542.0" />
+      <Button layoutX="85.0" layoutY="586.0" mnemonicParsing="false" onAction="#onViewDocumentButtonClicked" style="-fx-background-color: #01ab4b;" text="Ver documento" textFill="WHITE">
+         <font>
+            <Font name="Avenir Medium" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="998.0" layoutY="679.0" mnemonicParsing="false" onAction="#onAcceptButtonClicked" prefHeight="39.0" prefWidth="108.0" style="-fx-background-color: #01ab4b;" text="Guardar" textFill="WHITE">
+         <font>
+            <Font name="Avenir Medium" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="851.0" layoutY="680.0" mnemonicParsing="false" onAction="#onCancelButtonClicked" prefHeight="39.0" prefWidth="116.0" style="-fx-background-color: #01ab4b;" text="Cancelar" textFill="WHITE">
+         <font>
+            <Font name="Avenir Medium" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="lbReportHours" layoutX="806.0" layoutY="493.0" textFill="#015aaa">
+         <font>
+            <Font name="Avenir Medium" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="230.0" text="Nombre del proyecto" textFill="#015aaa">
+         <font>
+            <Font name="Avenir Medium" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

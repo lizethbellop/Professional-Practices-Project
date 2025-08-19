@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="practicasprofesionalespf.controller.coordinator.FXMLDataDeliverableController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="102.0" layoutX="34.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/uv_logo.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="730.0" prefHeight="56.0" prefWidth="294.0" style="-fx-background-color: #015aaa;">
+         <children>
+            <Label layoutX="12.0" layoutY="10.0" text="Universidad Veracruzana" textFill="WHITE">
+               <font>
+                  <Font name="Avenir Medium" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="185.0" layoutY="118.0" text="Datos del Entregable">
+         <font>
+            <Font name="Avenir Medium" size="36.0" />
+         </font>
+      </Label>
+      
+      <Label layoutX="185.0" layoutY="180.0" text="Tipo de Entrega:" textFill="#015aaa">
+         <font>
+            <Font name="Avenir Medium" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cbTipoEntrega" layoutX="185.0" layoutY="210.0" prefHeight="35.0" prefWidth="650.0" promptText="Seleccione el tipo de entrega" />
+      
+      <Label layoutX="185.0" layoutY="260.0" text="Nombre del Entregable:" textFill="#015aaa">
+         <font>
+            <Font name="Avenir Medium" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cbNombreDocumento" layoutX="185.0" layoutY="290.0" prefHeight="35.0" prefWidth="650.0" promptText="Seleccione el nombre del documento" />
+      
+      <Label layoutX="185.0" layoutY="340.0" text="Descripción (Opcional):" textFill="#015aaa">
+         <font>
+            <Font name="Avenir Medium" size="18.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="taDescription" layoutX="185.0" layoutY="370.0" prefHeight="100.0" prefWidth="650.0" wrapText="true" />
+      
+      <Label layoutX="185.0" layoutY="500.0" text="Fecha de Inicio:" textFill="#015aaa">
+         <font><Font name="Avenir Medium" size="18.0" /></font>
+      </Label>
+      <DatePicker fx:id="dpStartDate" layoutX="185.0" layoutY="530.0" prefHeight="35.0" prefWidth="180.0" />
+      <Label layoutX="400.0" layoutY="500.0" text="Hora de Inicio:" textFill="#015aaa">
+         <font><Font name="Avenir Medium" size="18.0" /></font>
+      </Label>
+      <ComboBox fx:id="cbStartHour" layoutX="400.0" layoutY="530.0" prefHeight="35.0" prefWidth="80.0" promptText="HH" />
+      <ComboBox fx:id="cbStartMinute" layoutX="490.0" layoutY="530.0" prefHeight="35.0" prefWidth="80.0" promptText="MM" />
+
+      <Label layoutX="185.0" layoutY="580.0" text="Fecha Límite:" textFill="#015aaa">
+         <font><Font name="Avenir Medium" size="18.0" /></font>
+      </Label>
+      <DatePicker fx:id="dpEndDate" layoutX="185.0" layoutY="610.0" prefHeight="35.0" prefWidth="180.0" />
+       <Label layoutX="400.0" layoutY="580.0" text="Hora Límite:" textFill="#015aaa">
+         <font><Font name="Avenir Medium" size="18.0" /></font>
+      </Label>
+      <ComboBox fx:id="cbEndHour" layoutX="400.0" layoutY="610.0" prefHeight="35.0" prefWidth="80.0" promptText="HH" />
+      <ComboBox fx:id="cbEndMinute" layoutX="490.0" layoutY="610.0" prefHeight="35.0" prefWidth="80.0" promptText="MM" />
+      <Button fx:id="btnSubmit" layoutX="800.0" layoutY="680.0" mnemonicParsing="false" onAction="#btnSubmitClicked" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #01ab4b;" text="Programar" textFill="WHITE">
+         <font>
+            <Font name="Avenir Medium" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnGoBack" layoutX="670.0" layoutY="680.0" mnemonicParsing="false" onAction="#goBack" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #01ab4b;" text="Cancelar" textFill="WHITE">
+         <font>
+            <Font name="Avenir Medium" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

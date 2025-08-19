@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="practicasprofesionalespf.controller.student.FXMLAssignmentOptionController">
+   <children>
+      <ImageView fitHeight="143.0" fitWidth="113.0" layoutX="35.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/uv_logo.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="716.0" layoutY="-2.0" prefHeight="77.0" prefWidth="309.0" style="-fx-background-color: #015aaa;">
+         <children>
+            <Label layoutX="26.0" layoutY="21.0" text="Universidad Veracruzana" textFill="WHITE">
+               <font>
+                  <Font name="Avenir Medium" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="207.0" layoutY="118.0" text="Elige una opción">
+         <font>
+            <Font name="Avenir Medium" size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="69.0" layoutY="233.0" mnemonicParsing="false" onAction="#onSubmitInitialDocClicked" prefHeight="83.0" prefWidth="329.0" style="-fx-background-color: #01ab4b;" text="Entregar Documento Inicial" textFill="WHITE">
+         <font>
+            <Font name="Avenir Medium" size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="489.0" layoutY="233.0" mnemonicParsing="false" onAction="#onSubmitReportClicked" prefHeight="82.0" prefWidth="330.0" style="-fx-background-color: #01ab4b;" text="Entregar Reporte" textFill="#fffefe">
+         <font>
+            <Font name="Avenir Medium" size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="68.0" layoutY="369.0" mnemonicParsing="false" onAction="#onSubmitFinalDocClicked" prefHeight="82.0" prefWidth="329.0" style="-fx-background-color: #01ab4b;" text="Entregar Documento Final" textFill="WHITE">
+         <font>
+            <Font name="Avenir Medium" size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="888.0" layoutY="684.0" mnemonicParsing="false" onAction="#onCancelButtonClicked" style="-fx-background-color: #01ab4b;" text="Cancelar" textFill="WHITE">
+         <font>
+            <Font name="Avenir Medium" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

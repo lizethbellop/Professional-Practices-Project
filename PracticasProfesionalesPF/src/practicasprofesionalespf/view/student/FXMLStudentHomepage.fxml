@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="practicasprofesionalespf.controller.student.FXMLStudentHomepageController">
+   <children>
+      <ImageView fitHeight="125.0" fitWidth="101.0" layoutX="20.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/uv_logo.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="734.0" layoutY="-1.0" prefHeight="65.0" prefWidth="290.0" style="-fx-background-color: #015aaa;">
+         <children>
+            <Label layoutX="13.0" layoutY="15.0" text="Universidad Veracruzana" textFill="WHITE">
+               <font>
+                  <Font name="Avenir Medium" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label fx:id="lbWelcomeMessage" layoutX="168.0" layoutY="73.0" text="Bienvenido">
+         <font>
+            <Font name="Avenir Medium" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="64.0" layoutY="203.0" text="Actividades">
+         <font>
+            <Font name="Avenir Medium" size="30.0" />
+         </font>
+      </Label>
+      <Separator layoutX="63.0" layoutY="241.0" prefHeight="0.0" prefWidth="889.0" />
+      <Button layoutX="69.0" layoutY="257.0" mnemonicParsing="false" onAction="#onSubmitAssignmentClicked" prefHeight="80.0" prefWidth="329.0" style="-fx-background-color: #7c9ccc;" text=" Completar entrega">
+         <font>
+            <Font name="Avenir Medium" size="24.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/file_icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="833.0" layoutY="79.0" mnemonicParsing="false" onAction="#onLogoutButtonClicked" prefHeight="40.0" prefWidth="160.0" style="-fx-background-color: #D32F2F;" text="Cerrar Sesión" textFill="WHITE">
+         <font>
+            <Font name="Avenir Medium" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

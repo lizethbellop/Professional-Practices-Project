@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="practicasprofesionalespf.controller.coordinator.FXMLScheduleDeliverableController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="102.0" layoutX="34.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/uv_logo.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="730.0" prefHeight="56.0" prefWidth="294.0" style="-fx-background-color: #015aaa;">
+         <children>
+            <Label layoutX="12.0" layoutY="10.0" text="Universidad Veracruzana" textFill="WHITE">
+               <font>
+                  <Font name="Avenir Medium" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      
+      <Label layoutX="185.0" layoutY="118.0" text="Programar Entregable">
+         <font>
+            <Font name="Avenir Medium" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="185.0" layoutY="170.0" text="Seleccione un estudiante y el tipo de entregable que desea programar.">
+         <font>
+            <Font name="Avenir Medium" size="18.0" />
+         </font>
+      </Label>
+      
+      <TableView fx:id="tvStudents" layoutX="185.0" layoutY="220.0" prefHeight="350.0" prefWidth="654.0">
+         <columns>
+            <TableColumn fx:id="tcStudentName" prefWidth="450.0" text="Nombre del Estudiante" />
+            <TableColumn fx:id="tcTuition" prefWidth="203.0" text="Matrícula" />
+         </columns>
+      </TableView>
+      
+      <Button fx:id="btnContinue" layoutX="800.0" layoutY="680.0" mnemonicParsing="false" onAction="#btnContinueClicked" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #01ab4b;" text="Continuar" textFill="WHITE">
+         <font>
+            <Font name="Avenir Medium" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnExit" layoutX="670.0" layoutY="680.0" mnemonicParsing="false" onAction="#btnExitClicked" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #01ab4b;" text="Cancelar" textFill="WHITE">
+         <font>
+            <Font name="Avenir Medium" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
