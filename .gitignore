@@ -1,0 +1,56 @@
+# ---------------------------
+# Archivos de macOS
+# ---------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+
+# ---------------------------
+# NetBeans
+# ---------------------------
+# Carpeta privada, local y específica de tu máquina
+nbproject/private/
+
+# Carpetas de compilación y distribución
+build/
+dist/
+nbbuild/
+nbdist/
+.nb-gradle/
+
+# ---------------------------
+# Archivos compilados de Java
+# ---------------------------
+*.class
+*.jar
+*.war
+*.ear
+
+# ---------------------------
+# Logs y temporales
+# ---------------------------
+*.log
+*.tmp
+*.swp
+*.bak
+*~
+
+# ---------------------------
+# IDEs adicionales (por si alguien más usa)
+# ---------------------------
+# IntelliJ IDEA
+.idea/
+*.ipr
+*.iws
+
+# VS Code
+.vscode/
+
+# Eclipse
+.settings/
+.classpath
+.project
