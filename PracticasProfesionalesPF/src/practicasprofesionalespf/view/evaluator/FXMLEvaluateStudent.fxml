@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="practicasprofesionalespf.controller.evaluator.FXMLEvaluateStudentController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="768.0" prefWidth="1004.0">
+         <children>
+            <ImageView fitHeight="137.0" fitWidth="114.0" layoutX="23.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/uv_logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="200.0" layoutY="77.0" text="Evaluando Estudiante">
+               <font>
+                  <Font name="Avenir Medium" size="24.0" />
+               </font>
+            </Label>
+            <Pane layoutX="720.0" layoutY="-3.0" prefHeight="73.0" prefWidth="285.0" style="-fx-background-color: #015aaa;">
+               <children>
+                  <Label layoutX="11.0" layoutY="18.0" text="Universidad Veracruzana" textFill="WHITE">
+                     <font>
+                        <Font name="Avenir Medium" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Label fx:id="lbEnrollmentId" layoutX="200.0" layoutY="125.0" textFill="#015aaa">
+               <font>
+                  <Font name="Avenir Medium" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbStudentName" layoutX="526.0" layoutY="125.0" textFill="#015aaa">
+               <font>
+                  <Font name="Avenir Medium" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="68.0" layoutY="182.0" text="¿Lo cumple?" textFill="#015aaa">
+               <font>
+                  <Font name="Avenir Medium" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="591.0" text="Observaciones" textFill="#015aaa">
+               <font>
+                  <Font name="Avenir Medium" size="18.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="taObservations" layoutX="68.0" layoutY="618.0" prefHeight="104.0" prefWidth="544.0" />
+            <Button layoutX="882.0" layoutY="687.0" mnemonicParsing="false" onAction="#onEvaluateButtonClicked" prefHeight="39.0" prefWidth="99.0" style="-fx-background-color: #01ab4b;" text="Evaluar" textFill="WHITE">
+               <font>
+                  <Font name="Avenir Medium" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="758.0" layoutY="687.0" mnemonicParsing="false" onAction="#onCancelButtonClicked" prefHeight="39.0" prefWidth="105.0" style="-fx-background-color: #01ab4b;" text="Cancelar" textFill="WHITE">
+               <font>
+                  <Font name="Avenir Medium" size="18.0" />
+               </font>
+            </Button>
+            <VBox fx:id="vbCriteriaContainer" layoutX="68.0" layoutY="219.0" prefHeight="382.0" prefWidth="909.0" spacing="15.0" />
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

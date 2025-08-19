@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="practicasprofesionalespf.controller.coordinator.FXMLConfirmAssignmentController">
+   <children>
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="350.0" prefWidth="330.0" style="-fx-border-color: grey;">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="Estudiante">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="60.0" text="Nombre" />
+            <TextField fx:id="tfStudentName" editable="false" layoutX="90.0" layoutY="55.0" prefWidth="220.0" />
+            <Label layoutX="14.0" layoutY="110.0" text="Matrícula" />
+            <TextField fx:id="tfStudentEnrollment" editable="false" layoutX="90.0" layoutY="105.0" prefWidth="220.0" />
+            <Label layoutX="14.0" layoutY="160.0" text="Correo" />
+            <TextField fx:id="tfStudentEmail" editable="false" layoutX="90.0" layoutY="155.0" prefWidth="220.0" />
+            <Label layoutX="14.0" layoutY="210.0" text="Teléfono" />
+            <TextField fx:id="tfStudentPhone" editable="false" layoutX="90.0" layoutY="205.0" prefWidth="220.0" />
+         </children>
+      </Pane>
+      <Pane layoutX="356.0" layoutY="14.0" prefHeight="350.0" prefWidth="330.0" style="-fx-border-color: grey;">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="Proyecto">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="60.0" text="Nombre" />
+            <TextField fx:id="tfProjectName" editable="false" layoutX="106.0" layoutY="60.0" prefWidth="210.0" />
+            <Label layoutX="14.0" layoutY="110.0" text="Descripción" />
+            <TextArea fx:id="taProjectDescription" editable="false" layoutX="106.0" layoutY="115.0" prefHeight="100.0" prefWidth="210.0" wrapText="true" />
+            <Label layoutX="14.0" layoutY="235.0" text="Responsable" />
+            <TextField fx:id="tfProjectManager" editable="false" layoutX="106.0" layoutY="235.0" prefWidth="210.0" />
+            <Label layoutX="14.0" layoutY="285.0" text="Departamento" />
+            <TextField fx:id="tfProjectPhase" editable="false" layoutX="106.0" layoutY="285.0" prefWidth="210.0" />
+         </children>
+      </Pane>
+      <Button fx:id="btnAssign" layoutX="555.0" layoutY="385.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="113.0" style="-fx-background-color: #01ab4b; -fx-text-fill: white;" text="Asignar">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCancel" layoutX="408.0" layoutY="385.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="113.0" style="-fx-background-color: #01ab4b; -fx-text-fill: white;" text="Cancelar">
+          <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="practicasprofesionalespf.controller.teacher.FXMLStudentRecordController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="102.0" layoutX="34.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+         <image><Image url="@../../images/uv_logo.png" /></image>
+      </ImageView>
+      <Pane layoutX="730.0" prefHeight="56.0" prefWidth="294.0" style="-fx-background-color: #015aaa;">
+         <children>
+            <Label layoutX="12.0" layoutY="10.0" text="Universidad Veracruzana" textFill="WHITE">
+               <font><Font name="Avenir Medium" size="24.0" /></font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="185.0" layoutY="118.0" text="Expedientes de Estudiantes">
+         <font><Font name="Avenir Medium" size="36.0" /></font>
+      </Label>
+      <TableView fx:id="tvStudents" layoutX="100.0" layoutY="200.0" prefHeight="450.0" prefWidth="824.0">
+         <columns>
+            <TableColumn fx:id="tcStudentName" prefWidth="350.0" text="Nombre del Estudiante" />
+            <TableColumn fx:id="tcEnrollment" prefWidth="150.0" text="Matrícula" />
+            <TableColumn fx:id="tcProject" prefWidth="320.0" text="Proyecto Asignado" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnConsult" layoutX="833.0" layoutY="680.0" mnemonicParsing="false" onAction="#btnConsultClicked" prefHeight="40.0" prefWidth="131.0" style="-fx-background-color: #01ab4b;" text="Consultar" textFill="WHITE">
+         <font><Font name="Avenir Medium" size="18.0" /></font>
+      </Button>
+      <Button layoutX="649.0" layoutY="680.0" mnemonicParsing="false" onAction="#btnExitClicked" prefHeight="40.0" prefWidth="141.0" style="-fx-background-color: #01ab4b;" text="Salir" textFill="WHITE">
+         <font><Font name="Avenir Medium" size="18.0" /></font>
+      </Button>
+   </children>
+</AnchorPane>

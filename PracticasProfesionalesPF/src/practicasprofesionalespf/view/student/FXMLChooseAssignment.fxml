@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="practicasprofesionalespf.controller.student.FXMLChooseAssignmentController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="128.0" layoutX="37.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/uv_logo.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="705.0" layoutY="-2.0" prefHeight="81.0" prefWidth="321.0" style="-fx-background-color: #015aaa;">
+         <children>
+            <Label layoutX="31.0" layoutY="24.0" text="Universidad Veracruzana" textFill="WHITE">
+               <font>
+                  <Font name="Avenir Medium" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="216.0" layoutY="128.0" text="¿Qué vas a entregar hoy?">
+         <font>
+            <Font name="Avenir Medium" size="36.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tvDeliveries" layoutX="91.0" layoutY="222.0" prefHeight="453.0" prefWidth="817.0">
+        <columns>
+          <TableColumn fx:id="tcDeliveryName" prefWidth="240.9940643310547" text="Nombre Entrega" />
+          <TableColumn fx:id="tcStartDate" prefWidth="201.00601196289062" text="Fecha inicio" />
+            <TableColumn fx:id="tcEndDate" prefWidth="196.73626708984375" text="Fecha fin" />
+            <TableColumn fx:id="tcType" prefWidth="178.89190673828125" text="Tipo" />
+        </columns>
+      </TableView>
+      <Button layoutX="844.0" layoutY="703.0" mnemonicParsing="false" onAction="#onAcceptButtonClicked" prefHeight="39.0" prefWidth="129.0" style="-fx-background-color: #01ab4b;" text="Continuar" textFill="WHITE">
+         <font>
+            <Font name="Avenir Medium" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="675.0" layoutY="703.0" mnemonicParsing="false" onAction="#onCancelButtonClicked" prefHeight="39.0" prefWidth="129.0" style="-fx-background-color: #01ab4b;" text="Cancelar" textFill="WHITE">
+         <font>
+            <Font name="Avenir Medium" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="practicasprofesionalespf.controller.teacher.FXMLPickDocumentController">
+   <children>
+      <ImageView fitHeight="116.0" fitWidth="96.0" layoutX="45.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/uv_logo.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="733.0" prefHeight="84.0" prefWidth="292.0" style="-fx-background-color: #015aaa;">
+         <children>
+            <Label layoutX="16.0" layoutY="25.0" text="Universidad Veracruzana" textFill="WHITE">
+               <font>
+                  <Font name="Avenir Medium" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="187.0" layoutY="86.0" text="Elige un documento">
+         <font>
+            <Font name="Avenir Medium" size="48.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tvDocuments" layoutX="138.0" layoutY="249.0" prefHeight="380.0" prefWidth="738.0">
+        <columns>
+          <TableColumn fx:id="tcName" prefWidth="373.0280456542969" text="Nombre" />
+          <TableColumn fx:id="tcDate" prefWidth="362.9719696044922" text="Fecha" />
+        </columns>
+      </TableView>
+      <Label fx:id="lbName" layoutX="438.0" layoutY="162.0" textFill="#015aaa">
+         <font>
+            <Font name="Avenir Medium" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbEnrollment" layoutX="211.0" layoutY="162.0" textFill="#015aaa">
+         <font>
+            <Font name="Avenir Medium" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="875.0" layoutY="670.0" mnemonicParsing="false" onAction="#onAcceptButtonClicked" prefHeight="39.0" prefWidth="113.0" style="-fx-background-color: #01ab4b;" text="Continuar" textFill="WHITE">
+         <font>
+            <Font name="Avenir Medium" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="688.0" layoutY="670.0" mnemonicParsing="false" onAction="#onCancelButtonClicked" prefHeight="39.0" prefWidth="125.0" style="-fx-background-color: #01ab4b;" text="Cancelar" textFill="WHITE">
+         <font>
+            <Font name="Avenir Medium" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

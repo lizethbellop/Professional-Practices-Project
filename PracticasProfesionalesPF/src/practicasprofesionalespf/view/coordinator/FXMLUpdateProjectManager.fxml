@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="430.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="practicasprofesionalespf.controller.coordinator.FXMLUpdateProjectManagerController">
+   <children>
+      <Label layoutX="128.0" layoutY="35.0" text="Actualizar Responsable de Proyecto">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="85.0" layoutY="100.0" text="Nombre(s):" />
+      <TextField fx:id="tfName" layoutX="240.0" layoutY="95.0" prefHeight="30.0" prefWidth="330.0" />
+      <Label layoutX="85.0" layoutY="140.0" text="Apellido Paterno:" />
+      <TextField fx:id="tfLastNameFather" layoutX="240.0" layoutY="135.0" prefHeight="30.0" prefWidth="330.0" />
+      <Label layoutX="85.0" layoutY="180.0" text="Apellido Materno:" />
+      <TextField fx:id="tfLastNameMother" layoutX="240.0" layoutY="175.0" prefHeight="30.0" prefWidth="330.0" />
+      <Label layoutX="85.0" layoutY="220.0" text="Cargo:" />
+      <TextField fx:id="tfPosition" layoutX="240.0" layoutY="215.0" prefHeight="30.0" prefWidth="330.0" />
+      <Label layoutX="85.0" layoutY="260.0" text="Correo electrónico:" />
+      <TextField fx:id="tfEmail" layoutX="240.0" layoutY="255.0" prefHeight="30.0" prefWidth="330.0" />
+      <Label layoutX="85.0" layoutY="300.0" text="Teléfono:" />
+      <TextField fx:id="tfPhone" layoutX="240.0" layoutY="295.0" prefHeight="30.0" prefWidth="330.0" />
+      <Label layoutX="85.0" layoutY="340.0" text="Organización Vinculada:" />
+      <ComboBox fx:id="cbLinkedOrganization" layoutX="240.0" layoutY="335.0" prefHeight="30.0" prefWidth="330.0" />
+      <Button layoutX="484.0" layoutY="380.0" onAction="#onAcceptButtonClicked" prefHeight="30.0" prefWidth="86.0" style="-fx-background-color: #01ab4b;" text="Actualizar" textFill="WHITE">
+         <font>
+            <Font name="Avenir Medium" size="13.0" />
+         </font></Button>
+      <Button layoutX="357.0" layoutY="380.0" onAction="#onCancelButtonClicked" prefHeight="30.0" prefWidth="86.0" style="-fx-background-color: #01ab4b;" text="Cancelar" textFill="WHITE">
+         <font>
+            <Font name="Avenir Medium" size="13.0" />
+         </font></Button>
+      <ImageView fitHeight="80.0" fitWidth="118.0" layoutX="1.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/uv_logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

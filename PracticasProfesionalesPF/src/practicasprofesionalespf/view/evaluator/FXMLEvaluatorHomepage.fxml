@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="practicasprofesionalespf.controller.evaluator.FXMLEvaluatorHomepageController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="121.0" layoutX="54.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/uv_logo.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="686.0" layoutY="-1.0" prefHeight="72.0" prefWidth="438.0" style="-fx-background-color: #015aaa;">
+         <children>
+            <Label layoutX="20.0" layoutY="13.0" text="Universidad Veracruzana" textFill="WHITE">
+               <font>
+                  <Font name="Avenir Medium" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="210.0" layoutY="103.0" text="Bienvenido de nuevo">
+         <font>
+            <Font name="Avenir Medium" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="82.0" layoutY="234.0" text="Evaluar">
+         <font>
+            <Font name="Avenir Medium" size="36.0" />
+         </font>
+      </Label>
+      <Separator layoutX="85.0" layoutY="288.0" prefHeight="0.0" prefWidth="909.0" />
+      <Button layoutX="106.0" layoutY="314.0" mnemonicParsing="false" onAction="#onEvaluateButtonClicked" prefHeight="82.0" prefWidth="329.0" style="-fx-background-color: #7c9ccc;" text=" Evaluar estudiante">
+         <font>
+            <Font name="Avenir Medium" size="24.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="34.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/student_icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="1016.0" layoutY="96.0" mnemonicParsing="false" onAction="#onLogOutButtonClicked" prefHeight="42.0" prefWidth="44.0" style="-fx-background-color: #ffffff;">
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/logout_icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

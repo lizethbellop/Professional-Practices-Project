@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="practicasprofesionalespf.controller.coordinator.FXMLProjectManagerRegistrationFormController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="114.0" layoutX="33.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/uv_logo.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="669.0" prefHeight="65.0" prefWidth="355.0" style="-fx-background-color: #015aaa;">
+         <children>
+            <Label layoutX="46.0" layoutY="15.0" text="Universidad Veracruzana" textFill="WHITE">
+               <font>
+                  <Font name="Avenir Medium" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="212.0" layoutY="111.0" text="Registrar Responsable de Proyecto">
+         <font>
+            <Font name="Avenir Medium" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="75.0" layoutY="261.0" text="Nombre" textFill="#015aaa">
+         <font>
+            <Font name="Avenir Medium" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="76.0" layoutY="463.0" text="Cargo" textFill="#015aaa">
+         <font>
+            <Font name="Avenir Medium" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="388.0" layoutY="262.0" text="Apellido Paterno" textFill="#015aaa">
+         <font>
+            <Font name="Avenir Medium" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="718.0" layoutY="265.0" text="Apellido Materno" textFill="#015aaa">
+         <font>
+            <Font name="Avenir Medium" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="383.0" layoutY="468.0" text="Correo" textFill="#015aaa">
+         <font>
+            <Font name="Avenir Medium" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="713.0" layoutY="468.0" text="Telefono" textFill="#015aaa">
+         <font>
+            <Font name="Avenir Medium" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfName" layoutX="70.0" layoutY="300.0" prefHeight="27.0" prefWidth="214.0" />
+      <TextField fx:id="tfLastNameFather" layoutX="377.0" layoutY="300.0" prefHeight="27.0" prefWidth="214.0" />
+      <TextField fx:id="tfLastNameMother" layoutX="715.0" layoutY="298.0" prefHeight="27.0" prefWidth="214.0" />
+      <TextField fx:id="tfPosition" layoutX="67.0" layoutY="497.0" prefHeight="27.0" prefWidth="214.0" />
+      <TextField fx:id="tfEmail" layoutX="379.0" layoutY="497.0" prefHeight="27.0" prefWidth="213.0" />
+      <TextField fx:id="tfPhone" layoutX="719.0" layoutY="497.0" prefHeight="27.0" prefWidth="214.0" />
+      <ComboBox fx:id="cbLinkedOrganization" layoutX="75.0" layoutY="621.0" prefHeight="27.0" prefWidth="201.0" promptText="Organizacion Vinculada" />
+      <Button layoutX="887.0" layoutY="696.0" mnemonicParsing="false" onAction="#onSavetButtonClickled" prefHeight="30.0" prefWidth="92.0" style="-fx-background-color: #01ab4b;" text="Registrar" textFill="WHITE">
+         <font>
+            <Font name="Avenir Medium" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="741.0" layoutY="696.0" mnemonicParsing="false" onAction="#onCancelButtonClicked" prefHeight="30.0" prefWidth="98.0" style="-fx-background-color: #01ab4b;" text="Cancelar" textFill="WHITE">
+         <font>
+            <Font name="Avenir Medium" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="74.0" layoutY="584.0" text="Organizacion Vinculada" textFill="#015aaa">
+         <font>
+            <Font name="Avenir Medium" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="practicasprofesionalespf.controller.student.FXMLSubmitReportController">
+    <children>
+        <ImageView fitHeight="150.0" fitWidth="102.0" layoutX="34.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../images/uv_logo.png" />
+            </image>
+        </ImageView>
+        <Pane layoutX="730.0" prefHeight="56.0" prefWidth="294.0" style="-fx-background-color: #015aaa;">
+            <children>
+                <Label layoutX="12.0" layoutY="10.0" text="Universidad Veracruzana" textFill="WHITE">
+                    <font>
+                        <Font name="Avenir Medium" size="24.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <Label layoutX="185.0" layoutY="118.0" text="Entregar Reporte">
+            <font>
+                <Font name="Avenir Medium" size="36.0" />
+            </font>
+        </Label>
+        <Label layoutX="185.0" layoutY="180.0" text="Nombre de la entrega:" textFill="#015aaa">
+            <font>
+                <Font name="Avenir Medium" size="22.0" />
+            </font>
+        </Label>
+        <Label fx:id="lbDeliveryName" layoutX="185.0" layoutY="210.0" text="[Nombre]">
+            <font>
+                <Font name="Avenir Book" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="600.0" layoutY="180.0" text="Fecha límite:" textFill="#015aaa">
+            <font>
+                <Font name="Avenir Medium" size="22.0" />
+            </font>
+        </Label>
+        <Label fx:id="lbDueDate" layoutX="600.0" layoutY="210.0" text="[Fecha]">
+            <font>
+                <Font name="Avenir Book" size="20.0" />
+            </font>
+        </Label>
+      
+        <Label layoutX="185.0" layoutY="270.0" text="Horas a reportar:" textFill="#015aaa">
+            <font>
+                <Font name="Avenir Medium" size="22.0" />
+            </font>
+        </Label>
+        <TextField fx:id="tfHours" layoutX="370.0" layoutY="266.0" prefHeight="35.0" prefWidth="150.0" promptText="Ej: 20" />
+      
+        <Button layoutX="185.0" layoutY="330.0" mnemonicParsing="false" onAction="#btnSelectFileClicked" text="Seleccionar Archivo..." />
+        <Label fx:id="lbFileName" layoutX="350.0" layoutY="335.0" text="Ningún archivo seleccionado">
+            <font>
+                <Font name="Avenir Book" size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="185.0" layoutY="390.0" text="Comentarios (Opcional):" textFill="#015aaa">
+            <font>
+                <Font name="Avenir Medium" size="22.0" />
+            </font>
+        </Label>
+        <TextArea fx:id="taComments" layoutX="185.0" layoutY="420.0" prefHeight="200.0" prefWidth="654.0" wrapText="true" />
+        <Button layoutX="800.0" layoutY="680.0" mnemonicParsing="false" onAction="#btnSubmitClicked" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #01ab4b;" text="Entregar" textFill="WHITE">
+            <font>
+                <Font name="Avenir Medium" size="18.0" />
+            </font>
+        </Button>
+        <Button layoutX="670.0" layoutY="680.0" mnemonicParsing="false" onAction="#btnGoBackClicked" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #01ab4b;" text="Cancelar" textFill="WHITE">
+            <font>
+                <Font name="Avenir Medium" size="18.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
